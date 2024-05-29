@@ -2,12 +2,8 @@
 # Author ID: ikamyabizadeh
 
 def is_digits(sobj):
-    """
-    This function takes a string object as its argument and returns True if all
-    characters in the string are digits, otherwise returns False.
-    """
     for char in sobj:
-        if not char.isdigit():
+        if char not in '0123456789':
             return False
     return True
 
